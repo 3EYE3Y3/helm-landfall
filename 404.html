@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+    <title>Helm Landfall</title>
+    <style id="expo-reset">
+      html, body { height: 100%; background: #0A171D; }
+      body { overflow: hidden; }
+      #root { display: flex; height: 100%; flex: 1; }
+    </style>
+    <link rel="manifest" href="/helm-landfall/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/helm-landfall/icons/icon-192.png" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <script>
+      // Offline shell for the installed build only (not the dev server on 8781).
+      // Needs a secure context (HTTPS or localhost); on a plain-http LAN address the app still runs, without install or offline shell.
+      if ('serviceWorker' in navigator && window.isSecureContext && location.port !== '8781') addEventListener('load', () => navigator.serviceWorker.register('/helm-landfall/sw.js', { scope: '/helm-landfall/' }));
+    </script>
+  <meta name="theme-color" content="#0A171D">
+<link rel="icon" href="/helm-landfall/favicon.ico"/></head>
+  <body>
+    <noscript>You need to enable JavaScript to run Helm Landfall.</noscript>
+    <div id="root"></div>
+  <script src="/helm-landfall/_expo/static/js/web/entry-6ff4d76abec42d011ea4da7a663f84ea.js" defer></script>
+</body>
+</html>

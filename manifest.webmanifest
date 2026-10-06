@@ -1,0 +1,16 @@
+{
+  "name": "Helm Landfall",
+  "short_name": "Landfall",
+  "description": "Stand your Watch. Real effort sails a real ship along a real coast.",
+  "id": "./",
+  "start_url": "./watch",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0A171D",
+  "theme_color": "#0A171D",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
