@@ -1,7 +1,7 @@
 // Landfall offline shell: caches the app shell and static assets so a sailor can open the app and
 // stand their Watch without a connection. The Log lives in the browser's storage, not here; the
 // crew service is never cached. A new deployment replaces the shell on the next visit.
-const VERSION = '7c1f2f0-1791633149';
+const VERSION = '58134d3-1791639020';
 const CACHE = `landfall-shell-${VERSION}`;
 const BASE = new URL(self.registration.scope).pathname;
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll([BASE, `${BASE}manifest.webmanifest`]))); self.skipWaiting(); });
